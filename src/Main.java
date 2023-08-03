@@ -56,8 +56,16 @@ public class Main {
             else if (choix2==5)
                 System.out.println("\n\t Villas luxieuses disponibles :" );
         }
-        else if (choix == 3)
-            System.out.println("\n\t Vous avez choisi de consulter le Menu: Nous contacter :" );
+        else if (choix == 3) {
+            Scanner ch = new Scanner(System.in);
+            System.out.println("entrons une chaine de caractere");
+            String ch1 = ch.nextLine();
+            System.out.println("vous avez entre :"+ ch1);
+            System.out.println("entrez la deuxieme chaine");
+            String ch2 = ch.nextLine();
+            System.out.println("vous avez entre:"+ ch2);
+            System.out.println("\n\t Vous avez choisi de consulter le Menu: Nous contacter :");
+        }
         else if (choix==4)
             System.out.println("\n\t Vous avez choisi de consulter le Menu: A propos :" );
 
